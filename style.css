@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+:root{
+    --white-text:#f9faf8;
+    --gray-links:#e5e7eb;
+    --background: #1f2937;
+    --background-button:#3882f6;
+    --background-button-active:#295cad;
+    --background-button-hover:#428aff;
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -9,12 +18,16 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 68px;
+    padding: 20px 100px;
+   
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 header,
 footer{
-    background-color: #1f2937;
+    background-color: var(--background);
 }
 
 .logo{
@@ -24,11 +37,62 @@ footer{
 .navigation{
     display: flex;
     justify-content: space-between;
-    list-style: none;
+
     width: 300px;
     margin: 0;
     padding: 0;
 
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
     font-size: 18px;
-    color: #e5e7eb;
+    color: var(--gray-links);
+}
+
+.hero{
+    color: var(--white-text);
+    background-color: var(--background);
+
+    padding: 200px 100px;
+
+    display: flex;
+    gap: 50px;
+}
+
+.hero > *{
+    flex: 1;
+}
+
+.hero h1{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero p{
+    font-size: 24px;
+    color:var(--white-text);
+}
+
+button{
+    border: unset;
+    border-radius: 10px;
+    padding: 10px 60px;
+    font-size: 20px;
+    color: var(--white-text);
+    font-weight: bold;
+    background-color: var(--background-button);
+}
+
+button:hover{
+    background-color: var(--background-button-hover);
+}
+
+button:active{
+    background-color: var(--background-button-active);
+}
+
+iframe{
+    box-shadow: #102f61b7 0 20px 50px -20px;
 }
