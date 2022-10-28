@@ -2,7 +2,9 @@
 
 :root{
     --white-text:#f9faf8;
-    --gray-links:#e5e7eb;
+    --links:#e5e7eb;
+    --description:#3e3e3e;;
+    --screenshots-heading:#1F2937;
     --background: #1f2937;
     --background-button:#3882f6;
     --background-button-active:#295cad;
@@ -48,7 +50,7 @@ footer{
 a{
     text-decoration: none;
     font-size: 18px;
-    color: var(--gray-links);
+    color: var(--links);
 }
 
 .hero{
@@ -94,5 +96,40 @@ button:active{
 }
 
 iframe{
-    box-shadow: #102f61b7 0 20px 50px -20px;
+    box-shadow: black 0 20px 50px -20px;
+}
+
+.screenshots{
+    padding: 0 100px;
+
+    text-align: center;
+}
+
+.screenshots h2{
+    margin: 60px 0;
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--screenshots-heading);
+}
+
+.screenshots-showcase{
+    max-width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.screenshot img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: black 0 20px 50px -20px;
+
+}
+
+.screenshot{
+    flex: 1;
+
+    color: var(--description);
+    font-size: 1.08rem;
 }
