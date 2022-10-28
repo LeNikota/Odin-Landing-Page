@@ -11,6 +11,7 @@
     --background-button-hover:#428aff;
     --background-quote:#e5e7eb;
     --quote-text:#1f2937;
+    --background-call-to-action:#3882f6;
 }
 
 body{
@@ -79,7 +80,7 @@ footer{
     color:var(--white-text);
 }
 
-button{
+.hero button{
     border: unset;
     border-radius: 10px;
     padding: 10px 60px;
@@ -156,4 +157,39 @@ cite{
     font-size: 1.3rem;
     font-weight: bold;
     text-align: right;
+}
+
+.call-to-action{
+    margin: 100px 300px;
+    padding: 30px 80px;
+    border-radius: 10px;
+
+    background-color: var(--background-call-to-action);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--white-text);
+}
+
+
+.call-to-action h2, p{
+    margin: 0;
+}
+
+.call-to-action h2{
+    font-weight: bolder;
+    margin-bottom: 4px;
+}
+
+.call-to-action button{
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: var(--white-text) 2px solid;
+    color: var(--white-text);
+
+    font-weight: bolder;
+    font-size: 1.1rem;
 }
