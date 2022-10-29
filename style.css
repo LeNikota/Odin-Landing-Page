@@ -14,6 +14,10 @@
     --background-call-to-action:#3882f6;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -80,7 +84,7 @@ footer{
     color:var(--white-text);
 }
 
-.hero button{
+.hero a{
     border: unset;
     border-radius: 10px;
     padding: 10px 60px;
@@ -88,13 +92,17 @@ footer{
     color: var(--white-text);
     font-weight: bold;
     background-color: var(--background-button);
+    margin-top: 30px;
+    display: inline-block;
+
+    text-decoration: none;
 }
 
-button:hover{
+.hero a:hover{
     background-color: var(--background-button-hover);
 }
 
-button:active{
+.hero a:active{
     background-color: var(--background-button-active);
 }
 
@@ -183,7 +191,7 @@ cite{
     margin-bottom: 4px;
 }
 
-.call-to-action button{
+.call-to-action a{
     border-radius: 20px;
     padding: 15px 30px;
     background-color: transparent;
@@ -192,4 +200,24 @@ cite{
 
     font-weight: bolder;
     font-size: 1.1rem;
+    text-decoration: none;
+
+    user-select: none;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+
+    color: var(--white-text);
+    font-size: 1.2rem;
+}
+
+footer a{
+    color: inherit;
+    font-size: 1.2rem;
+}
+
+footer img{
+    width: 1.2rem;
 }
